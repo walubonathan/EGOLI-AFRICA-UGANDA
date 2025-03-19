@@ -1,0 +1,771 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #007b5e;
+}
+
+.donate-btn {
+  padding: 8px 16px;
+  background: #007b5e;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.donate-btn:hover {
+  background: #005f47;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 123, 94, 0.7), rgba(0, 123, 94, 0.7)),
+    url("../images/staff\ good.jpg") no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  text-decoration: none;
+  padding: 12px 30px;
+  background: #fff;
+  color: #007b5e;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #e0e0e0;
+}
+
+/* Why EGOLI Section */
+.why-egoli {
+  padding: 60px 0;
+  background: #f0f8f6;
+}
+
+
+.why-egoli h2 {
+  text-align: center;
+  color: #007b5e;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.why-egoli p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.impact-list {
+  margin: 20px auto;
+  list-style: none;
+  max-width: 700px;
+}
+
+.impact-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #007b5e;
+}
+
+.projects p {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  color: #007b5e;
+}
+
+.card-content p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card-content .cta-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #007b5e;
+  color: #fff;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.card-content .cta-button:hover {
+  background: #005f47;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 60px 0;
+  background: #f0f8f6;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #007b5e;
+  margin-bottom: 20px;
+}
+
+.testimonials p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.testimonial {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.testimonial h4 {
+  font-size: 1rem;
+  color: #007b5e;
+  font-weight: bold;
+}
+
+/* Join Us Section */
+.join-us {
+  padding: 60px 0;
+  background: linear-gradient(45deg, #007b5e, #005f47);
+  color: #fff;
+  text-align: center;
+}
+
+.join-us h2 {
+  margin-bottom: 20px;
+}
+
+.join-us p {
+  margin-bottom: 30px;
+}
+
+.join-us .cta-button {
+  margin: 0 10px;
+  padding: 12px 30px;
+  background: #fff;
+  color: #007b5e;
+  font-weight: bold;
+}
+
+.join-us .cta-button:hover {
+  background: #e0e0e0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card,
+.testimonial {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0; /* Ensures animation only happens once */
+}
+
+/* Footer Styling */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 40px 0 20px 0;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-content h3 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-content p,
+.footer-content a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: #fff;
+}
+
+.footer-section.newsletter input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-section.newsletter button {
+  width: 100%;
+  padding: 10px;
+  background: #007b5e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-section.newsletter button:hover {
+  background: #005f47;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #fff;
+}
+
+/* Achievements Section */
+.achievements {
+  padding: 60px 0;
+  background: #f0f8f6;
+  text-align: center;
+}
+
+.achievements h2 {
+  margin-bottom: 20px;
+  color: #007b5e;
+}
+
+.achievement-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.achievement-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.achievement-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Success Stories Section */
+.success-stories {
+  padding: 60px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.success-stories h2 {
+  color: #007b5e;
+  margin-bottom: 20px;
+}
+
+.stories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.story {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.story img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+}
+
+/* Call-to-Action Section */
+.get-involved {
+  padding: 60px 0;
+  background: linear-gradient(45deg, #007b5e, #005f47);
+  color: #fff;
+  text-align: center;
+}
+
+.get-involved h2 {
+  margin-bottom: 20px;
+}
+
+.get-involved p {
+  margin-bottom: 30px;
+}
+
+.animated-button {
+  margin: 10px;
+  padding: 12px 30px;
+  background: #fff;
+  color: #007b5e;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-button:hover {
+  background: #e0e0e0;
+  color: #005f47;
+  transform: translateY(-5px);
+}
+
+/* Partner Logos Section */
+.partners {
+  padding: 60px 0;
+  background: #f0f8f6;
+  text-align: center;
+}
+
+.partners h2 {
+  margin-bottom: 20px;
+  color: #007b5e;
+}
+
+.partner-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.partner-logos img {
+  width: 100%;
+  max-width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.partner-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    /* Base styles for the slideshow container */
+    .slideshow {
+      position: relative;
+      width: 100%;
+      max-width: 800px; /* Adjust maximum width as needed */
+      height: 400px;    /* Adjust the height as needed */
+      margin: auto;
+      overflow: hidden;
+    }
+  
+    /* Each slide is absolutely positioned and fills the parent */
+    .slideshow-item {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      animation: fadeInOut 12s infinite;
+    }
+  
+    /* Assign staggered animation delays for smooth transitions */
+    .slideshow-item:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .slideshow-item:nth-child(2) {
+      animation-delay: 4s;
+    }
+    .slideshow-item:nth-child(3) {
+      animation-delay: 8s;
+    }
+  
+    /* Ensure the images cover the container completely */
+    .slideshow-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    /* Keyframes for fading in and out */
+    @keyframes fadeInOut {
+      0%, 33% { opacity: 0; }
+      8%, 25% { opacity: 1;}
+  }
+  
+  
+
+
+/* Additional Responsive Media Queries */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+  .why-egoli h2,
+  .projects h2,
+  .testimonials h2,
+  .join-us h2,
+  .achievements h2,
+  .success-stories h2,
+  .get-involved h2,
+  .partners h2 {
+    font-size: 1.8rem;
+  }
+  .project-cards,
+  .testimonial-cards,
+  .achievement-cards,
+  .stories,
+  .partner-logos {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .hero {
+    padding: 80px 0;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  .project-cards,
+  .testimonial-cards,
+  .achievement-cards,
+  .stories,
+  .partner-logos {
+    grid-template-columns: 1fr;
+  }
+  .cta-button,
+  .donate-btn,
+  .animated-button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  .why-egoli h2,
+  .projects h2,
+  .testimonials h2,
+  .join-us h2,
+  .achievements h2,
+  .success-stories h2,
+  .get-involved h2,
+  .partners h2 {
+    font-size: 1.5rem;
+  }
+  .nav-menu {
+    gap: 10px;
+  }
+  .cta-button,
+  .donate-btn,
+  .animated-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+
+    /* background images css -- >  
+.background-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+}
+
+/* Individual background elements */
+.bg-image-1 {
+  width: 300px;
+  height: 300px;
+  top: 20%;
+  left: 10%;
+  animation: float 8s ease-in-out infinite;
+  background-image: url(../images/education2.jpg);
+}
+
+.bg-image-2 {
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  right: 15%;
+  animation: rotate 10s linear infinite;
+  background-image: url(../images/education.jpg);
+}
+
+.bg-image-3 {
+  width: 250px;
+  height: 250px;
+  bottom: 10%;
+  left: 40%;
+  animation: pulse 8s ease-in-out infinite;
+  background-image: url(../images/health3.jpg);
+}
+.bg-image-4 {
+  width: 250px;
+  height: 250px;
+  bottom: 10%;
+  left: 40%;
+  animation: pulse 8s ease-in-out infinite;
+  background-image: url(../images/health6.jpg);
+}
+
+/* Content overlay */
+.content {
+  position: absolute;
+  padding: 2rem;
+  color: white;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+}
+
+/* Keyframes */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(3deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(-3deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+/* Interactive parallax effect */
+@media (hover: hover) {
+  .background-container {
+    transition: transform 0.3s ease-out;
+  }
+
+  Body:hover .background-container {
+    transform: Translate(
+      Calc(var(--mouse-x) * 15px – 15px),
+      Calc(var(--mouse-y) * 15px – 15px)
+    );
+  }
+}
