@@ -175,6 +175,7 @@
     width: 100%;
     border-radius: 8px;
     transition: transform 0.3s;
+    height: 200px;
   }
   .gallery-grid img:hover {
     transform: scale(1.05);
